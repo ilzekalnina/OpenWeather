@@ -1,25 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LeckerliOne-Regular.ttf">
+            <string>LeckerliOne-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dayBackground" translatesAutoresizingMaskIntoConstraints="NO" id="TCA-Id-0Wq">
+                                <rect key="frame" x="-543" y="-1052" width="1500" height="3000"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="... is beautiful" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="j9E-hd-eat">
+                                <rect key="frame" x="99" y="514" width="219" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="RRl-uA-jKW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LeckerliOne-Regular" family="Leckerli One" pointSize="50"/>
+                                <color key="textColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The weather outside..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="web-yA-L5D">
+                                <rect key="frame" x="61.5" y="117" width="291" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ARp-t0-KNC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LeckerliOne-Regular" family="Leckerli One" pointSize="50"/>
+                                <color key="textColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9E-hd-eat" secondAttribute="trailing" constant="96" id="80m-e3-zLu"/>
+                            <constraint firstItem="web-yA-L5D" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8OV-xp-Gtn"/>
+                            <constraint firstItem="j9E-hd-eat" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="1.5" id="SpP-QZ-q5M"/>
+                            <constraint firstItem="web-yA-L5D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="XHC-CL-1v7"/>
+                            <constraint firstItem="TCA-Id-0Wq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cIv-5J-b9R"/>
+                            <constraint firstItem="TCA-Id-0Wq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fSQ-c5-5a5"/>
+                            <constraint firstItem="j9E-hd-eat" firstAttribute="top" relation="lessThanOrEqual" secondItem="web-yA-L5D" secondAttribute="bottom" constant="247" id="gOl-S3-ovY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j9E-hd-eat" secondAttribute="bottom" constant="198" id="sTA-U3-3SO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="web-yA-L5D" secondAttribute="trailing" constant="61.5" id="yHl-wQ-MTH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dayBackground" width="1500" height="3000"/>
+    </resources>
 </document>
