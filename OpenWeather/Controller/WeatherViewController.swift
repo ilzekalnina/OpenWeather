@@ -12,8 +12,10 @@ import Alamofire
 import SwiftyJSON
 
 
-class WeatherViewController: UIViewController, CLLocationManagerDelegate {
+class WeatherViewController: UIViewController, CLLocationManagerDelegate, ChangeCityDelegate {
+
     
+    //ChangeCityDelegate is our made protocol in ChangeCityViewController
     let weatherDataModel = WeatherDataModel()
     let locationManager = CLLocationManager()
     
@@ -106,6 +108,26 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "changeCityName" {
+            let destinationVC = segue.destination as! ChangeCityViewController
+            destinationVC.delegate = self // it will pass back what we are typing in text box
+            
+        }
+    }
+    
+    
+    
+    
+    //MARK: - ChangeCityDelegate Delegate
+    
+    func userEnteredNewCityName(city: String) {
+        print(city)
+        let params: [String: String] = ["q": city, "appid": weatherDataModel.apiId] 
+        getWeatherData(url: weatherDataModel.apiUrl, parameters: params)
+    
+    }
     
     
     
