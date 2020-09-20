@@ -104,7 +104,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
         
         cityLabel.text = weatherDataModel.city
         tempLabel.text = ("\(weatherDataModel.temp)")
-        weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+       // weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+        weatherIcon.image = UIImage(systemName: weatherDataModel.weatherIconName)
         
     }
     

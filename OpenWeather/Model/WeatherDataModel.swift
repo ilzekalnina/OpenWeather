@@ -21,29 +21,29 @@ class WeatherDataModel {
     func updateWeatherIcon(condition: Int) -> String {
         switch (condition) {
         case 0...300 :
-            return "tstorm1"
+            return "cloud.sun.bolt"
         case 301...500 :
-            return "light_rain"
+            return "cloud.sun.rain"
         case 501...600 :
-            return "shower3"
+            return "cloud.heavyrain"
         case 601...700 :
-            return "snow4"
+            return "cloud.snow"
         case 701...771 :
-            return "fog"
+            return "cloud.fog"
         case 772...799 :
-            return "tstorm3"
+            return "cloud.bolt.rain"
         case 800 :
-            return "sunny"
+            return "sun.max"
         case 801...804 :
-            return "cloudy2"
+            return "cloud.sun"
         case 900...903, 905...1000  :
-            return "tstorm3"
+            return "cloud.bolt.rain"
         case 903 :
-            return "snow5"
+            return "cloud.sleet"
         case 904 :
-            return "sunny"
+            return "sun.max"
         default :
-            return "dunno"
+            return "questionmark"
         }
     }
     
