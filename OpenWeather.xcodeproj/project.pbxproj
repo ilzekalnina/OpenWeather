@@ -66,7 +66,7 @@
 		77C322E525150C6800032FF0 /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
-				77C3230125162B2300032FF0 /* Fonts */,
+				77C3230125162B2300032FF0 /* ExtraResource */,
 				77C322FD2515105400032FF0 /* Model */,
 				77C322FA2515103200032FF0 /* AppDelegate */,
 				77C322FB2515103F00032FF0 /* Controller */,
@@ -112,12 +112,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		77C3230125162B2300032FF0 /* Fonts */ = {
+		77C3230125162B2300032FF0 /* ExtraResource */ = {
 			isa = PBXGroup;
 			children = (
 				77C322FF25162B1700032FF0 /* LeckerliOne-Regular.ttf */,
 			);
-			path = Fonts;
+			path = ExtraResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

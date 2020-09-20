@@ -121,24 +121,28 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xhp-ye-Rer">
-                                <rect key="frame" x="83.5" y="142" width="247" height="122"/>
+                                <rect key="frame" x="83.5" y="196" width="247" height="108"/>
                                 <subviews>
                                     <textField opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the city name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRv-X0-ffw">
-                                        <rect key="frame" x="0.0" y="0.0" width="247" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="247" id="9e6-Pe-ZdK"/>
-                                            <constraint firstAttribute="height" constant="64" id="pOi-6T-7V7"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7Ea-WD-odH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="9e6-Pe-ZdK"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="vzV-8E-XlP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q6-JR-woD">
-                                        <rect key="frame" x="0.0" y="72" width="247" height="50"/>
+                                        <rect key="frame" x="0.0" y="58" width="247" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="TeU-Jd-E7N"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="b43-zY-9Vs"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Get Weather">
                                             <color key="titleColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -148,6 +152,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eJm-eO-pVL">
+                                <rect key="frame" x="0.0" y="355" width="414" height="128"/>
+                                <color key="tintColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="X6y-Wp-1o1"/>
+                                    <constraint firstAttribute="height" constant="129" id="c3A-ne-xxg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -155,9 +167,11 @@
                             <constraint firstItem="Tgd-rT-wFt" firstAttribute="top" secondItem="wYk-xx-3Jw" secondAttribute="bottom" constant="5" id="Q2G-4g-VO9"/>
                             <constraint firstItem="Xhp-ye-Rer" firstAttribute="centerX" secondItem="KBQ-3B-IHx" secondAttribute="centerX" id="aQw-cO-8RE"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYk-xx-3Jw" secondAttribute="trailing" constant="20" symbolic="YES" id="bKM-FQ-Wky"/>
-                            <constraint firstItem="Xhp-ye-Rer" firstAttribute="centerY" secondItem="KBQ-3B-IHx" secondAttribute="centerY" constant="-218" id="l9s-KR-81W"/>
+                            <constraint firstItem="eJm-eO-pVL" firstAttribute="centerX" secondItem="KBQ-3B-IHx" secondAttribute="centerX" id="esw-Gu-f3c"/>
+                            <constraint firstItem="Xhp-ye-Rer" firstAttribute="centerY" secondItem="KBQ-3B-IHx" secondAttribute="centerY" constant="-171" id="l9s-KR-81W"/>
                             <constraint firstItem="Tgd-rT-wFt" firstAttribute="centerX" secondItem="KBQ-3B-IHx" secondAttribute="centerX" id="rzg-1l-NjK"/>
                             <constraint firstItem="wYk-xx-3Jw" firstAttribute="leading" secondItem="KBQ-3B-IHx" secondAttribute="leadingMargin" constant="-10" id="std-nV-UJW"/>
+                            <constraint firstItem="eJm-eO-pVL" firstAttribute="centerY" secondItem="KBQ-3B-IHx" secondAttribute="centerY" id="tKl-nb-ba8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IfA-Dj-FI0"/>
                     </view>
@@ -174,6 +188,7 @@
     <resources>
         <image name="arrow.clockwise.icloud" catalog="system" width="128" height="88"/>
         <image name="cloud.sun" catalog="system" width="128" height="88"/>
+        <image name="cloud.sun.fill" catalog="system" width="128" height="88"/>
         <image name="dayBackground" width="1500" height="3000"/>
         <image name="nightBackground" width="1500" height="3000"/>
     </resources>
