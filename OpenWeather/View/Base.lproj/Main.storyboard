@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3LR-Hr-72t">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Weather View Controller-->
+        <!--Weather-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="OpenWeather" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-Yu-U1i">
-                                <rect key="frame" x="107" y="173.5" width="200" height="200"/>
+                                <rect key="frame" x="107" y="173.66666666666669" width="200" height="199.66666666666666"/>
                                 <color key="tintColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="7wC-Cx-uw7"/>
@@ -91,6 +91,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Weather" image="cloud.sun" catalog="system" id="dwH-ZM-6ek"/>
                     <connections>
                         <outlet property="cityLabel" destination="EPp-jo-8aO" id="JT0-ol-eoe"/>
                         <outlet property="tempLabel" destination="ZuD-tg-heu" id="6q6-gr-kbx"/>
@@ -99,7 +100,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--App Info-->
+        <scene sceneID="ZcT-Dn-Ckl">
+            <objects>
+                <viewController id="W7X-Bp-Ims" customClass="AppInfoViewController" customModule="OpenWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="65z-oD-AYV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dayBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HdX-Qe-8Bs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="CyR-lw-suV"/>
+                                    <constraint firstAttribute="height" constant="896" id="UeE-LR-7J0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info about Weather app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC1-Zb-RLG">
+                                <rect key="frame" x="70.666666666666686" y="153" width="273" height="453"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="273" id="QaV-Rz-7bN"/>
+                                    <constraint firstAttribute="height" constant="453" id="U8n-hG-7iz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrella" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-9t-fmk">
+                                <rect key="frame" x="178" y="631" width="58" height="44.666666666666629"/>
+                                <color key="tintColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44.5" id="Feh-Z4-YHm"/>
+                                    <constraint firstAttribute="width" constant="58" id="k8x-hg-nCM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IWb-9t-fmk" firstAttribute="top" secondItem="JC1-Zb-RLG" secondAttribute="bottom" constant="25" id="3LX-xn-iJp"/>
+                            <constraint firstItem="JC1-Zb-RLG" firstAttribute="centerY" secondItem="65z-oD-AYV" secondAttribute="centerY" constant="-68.5" id="FvU-gC-LOi"/>
+                            <constraint firstItem="JC1-Zb-RLG" firstAttribute="centerX" secondItem="65z-oD-AYV" secondAttribute="centerX" id="KsN-le-XCX"/>
+                            <constraint firstItem="HdX-Qe-8Bs" firstAttribute="centerX" secondItem="65z-oD-AYV" secondAttribute="centerX" id="cAB-na-LB1"/>
+                            <constraint firstItem="IWb-9t-fmk" firstAttribute="centerX" secondItem="SVm-le-aIA" secondAttribute="centerX" id="g4V-Uz-4p2"/>
+                            <constraint firstItem="HdX-Qe-8Bs" firstAttribute="centerY" secondItem="65z-oD-AYV" secondAttribute="centerY" id="iJG-9A-PRA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SVm-le-aIA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="App Info" id="4xc-zC-2cl"/>
+                    <connections>
+                        <outlet property="appInfoLabel" destination="JC1-Zb-RLG" id="27y-uC-UqL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qye-sX-wi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.7826086956522" y="855.80357142857144"/>
         </scene>
         <!--Change City View Controller-->
         <scene sceneID="qCn-O6-51r">
@@ -121,7 +176,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xhp-ye-Rer">
-                                <rect key="frame" x="83.5" y="196" width="247" height="108"/>
+                                <rect key="frame" x="83.666666666666686" y="196" width="247" height="108"/>
                                 <subviews>
                                     <textField opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the city name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRv-X0-ffw" customClass="DesignableTextField" customModule="OpenWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="247" height="50"/>
@@ -180,7 +235,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eJm-eO-pVL">
-                                <rect key="frame" x="0.0" y="355" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="355.33333333333337" width="414" height="127.66666666666666"/>
                                 <color key="tintColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="X6y-Wp-1o1"/>
@@ -209,7 +264,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mxc-R8-ufh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926.08695652173924" y="126.5625"/>
+            <point key="canvasLocation" x="1836.2318840579712" y="126.5625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OaC-SB-Vqe">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3LR-Hr-72t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dev-XI-jKE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="z3G-hz-5tO"/>
+                        <segue destination="o4e-j0-RX4" kind="relationship" relationship="viewControllers" id="Z1B-TT-44X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yb0-p1-Vuu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="shj-hY-7EY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o4e-j0-RX4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="Yw6-uS-IMv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tdj-bI-Wuh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W7X-Bp-Ims" kind="relationship" relationship="rootViewController" id="Uh6-Nh-5eo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESw-C8-ANU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="856"/>
         </scene>
     </scenes>
     <resources>
@@ -218,6 +316,8 @@
         <image name="cloud.sun.fill" catalog="system" width="128" height="88"/>
         <image name="dayBackground" width="1500" height="3000"/>
         <image name="house" catalog="system" width="128" height="110"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="nightBackground" width="1500" height="3000"/>
+        <image name="umbrella" catalog="system" width="118" height="128"/>
     </resources>
 </document>
