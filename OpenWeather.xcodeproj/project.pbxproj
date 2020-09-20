@@ -13,6 +13,7 @@
 		7728392D2516600300B2740C /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728392C2516600300B2740C /* WeatherDataModel.swift */; };
 		774652192517681600A0B776 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774652182517681600A0B776 /* BounceButton.swift */; };
 		7746521B2517686300A0B776 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746521A2517686300A0B776 /* DesignButton.swift */; };
+		7746521D25176F4E00A0B776 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746521C25176F4E00A0B776 /* DesignableTextField.swift */; };
 		77C322E725150C6800032FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C322E625150C6800032FF0 /* AppDelegate.swift */; };
 		77C322E925150C6800032FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C322E825150C6800032FF0 /* SceneDelegate.swift */; };
 		77C322EB25150C6800032FF0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C322EA25150C6800032FF0 /* WeatherViewController.swift */; };
@@ -27,6 +28,7 @@
 		7728392C2516600300B2740C /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		774652182517681600A0B776 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		7746521A2517686300A0B776 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		7746521C25176F4E00A0B776 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		77C322E325150C6800032FF0 /* OpenWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C322E625150C6800032FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C322E825150C6800032FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				77C322FF25162B1700032FF0 /* LeckerliOne-Regular.ttf */,
 				774652182517681600A0B776 /* BounceButton.swift */,
 				7746521A2517686300A0B776 /* DesignButton.swift */,
+				7746521C25176F4E00A0B776 /* DesignableTextField.swift */,
 			);
 			path = ExtraResource;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				77C322EB25150C6800032FF0 /* WeatherViewController.swift in Sources */,
 				7728392D2516600300B2740C /* WeatherDataModel.swift in Sources */,
 				77C322E725150C6800032FF0 /* AppDelegate.swift in Sources */,
+				7746521D25176F4E00A0B776 /* DesignableTextField.swift in Sources */,
 				77C322E925150C6800032FF0 /* SceneDelegate.swift in Sources */,
 				7746521B2517686300A0B776 /* DesignButton.swift in Sources */,
 				7728392525165C6300B2740C /* ChangeCityViewController.swift in Sources */,

@@ -123,17 +123,33 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xhp-ye-Rer">
                                 <rect key="frame" x="83.5" y="196" width="247" height="108"/>
                                 <subviews>
-                                    <textField opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the city name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRv-X0-ffw">
+                                    <textField opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the city name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRv-X0-ffw" customClass="DesignableTextField" customModule="OpenWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="247" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7Ea-WD-odH"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="9e6-Pe-ZdK"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="vzV-8E-XlP"/>
                                         </constraints>
+                                        <color key="textColor" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.52671426529999998" green="0.81995183230000002" blue="0.85461235049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="house" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q6-JR-woD" customClass="DesignButton" customModule="OpenWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="247" height="50"/>
@@ -201,6 +217,7 @@
         <image name="cloud.sun" catalog="system" width="128" height="88"/>
         <image name="cloud.sun.fill" catalog="system" width="128" height="88"/>
         <image name="dayBackground" width="1500" height="3000"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="nightBackground" width="1500" height="3000"/>
     </resources>
 </document>
